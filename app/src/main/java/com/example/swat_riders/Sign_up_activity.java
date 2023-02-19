@@ -6,6 +6,8 @@ import android.os.Bundle;
 
 public class Sign_up_activity extends AppCompatActivity {
 
+
+    // Changes has done by Abbas khan
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
