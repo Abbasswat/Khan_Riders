@@ -10,7 +10,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.swat_riders.Model.ModelClass;
 import com.example.swat_riders.R;
@@ -35,11 +34,8 @@ import java.util.List;
 
             int resource = userlist.get(position).getImage();
             String name = userlist.get(position).getTextview();
-            String time = userlist.get(position).getTextview1();
-            String msg = userlist.get(position).getTextview2();
-            String divider = userlist.get(position).getTextview3();
 
-            holder.setData(resource,name,time,msg,divider);
+            holder.setData(resource,name);
         }
 
         @Override
@@ -51,18 +47,14 @@ import java.util.List;
 
             private ImageView imageView1;
             private TextView textView;
-            private TextView textView1;
-            private TextView textView2;
-            private TextView textView3;
+
 
             public ViewHolder(@NonNull View itemView) {
                 super(itemView);
 
                 imageView1 = itemView.findViewById(R.id.image);
                 textView = itemView.findViewById(R.id.txt1);
-                textView1 = itemView.findViewById(R.id.txt2);
-                textView2 = itemView.findViewById(R.id.txt3);
-                textView3 = itemView.findViewById(R.id.txt4);
+
 
 
 
@@ -70,12 +62,10 @@ import java.util.List;
 
             }
 
-            public void setData(int resource, String name, String time, String msg, String divider) {
+            public void setData(int resource, String name) {
                 imageView1.setImageResource(resource);
                 textView.setText(name);
-                textView1.setText(time);
-                textView2.setText(msg);
-                textView3.setText(divider);
+
             }
         }
     }

@@ -50,38 +50,43 @@
             android:textSize="20sp"
             android:textStyle="bold" />
 
-        <LinearLayout
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_to_SignIN_Page"
             android:layout_width="200dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:background="@drawable/button_backgroun"
+            android:text="Sign In"
+            android:textSize="18dp"
             android:layout_marginTop="20dp"
-            android:background="@drawable/button_backgroun">
+            android:layout_gravity="center"
+            app:backgroundTint="#ed530c" />
+<!--        <LinearLayout-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:background="@drawable/register_button_back">-->
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="LOGIN"
-                android:textColor="@color/white"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-        <LinearLayout
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Register"-->
+<!--                android:textColor="#ed530c"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textStyle="bold" />-->
+<!--        </LinearLayout>-->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_Register_to_registerPage"
             android:layout_width="200dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:background="@drawable/register_button_back"
+            android:text="Register"
+            android:textSize="18dp"
+            android:textColor="#ed530c"
             android:layout_marginTop="20dp"
-            android:background="@drawable/register_button_back">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="Register"
-                android:textColor="#ed530c"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-        </LinearLayout>
+            android:layout_gravity="center"
+            app:backgroundTint="#D2877D79" />
 
     </LinearLayout>
 

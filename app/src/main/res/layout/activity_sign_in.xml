@@ -87,12 +87,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="3dp"
                     android:text="mobile number"
                     android:textColor="#A3FFFFFF"
                     android:textSize="16sp" />
 
                 <EditText
-                    android:id="@+id/editTextPhone1"
+                    android:id="@+id/editTextPhone"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -100,6 +102,7 @@
                     android:ems="10"
                     android:hint="+923451111111"
                     android:inputType="phone"
+                    android:paddingLeft="3dp"
                     android:textColor="#F8FFFFFF"
                     android:textColorHint="#A3FFFFFF" />
             </LinearLayout>
@@ -126,12 +129,12 @@
 
 
                 <EditText
-                    android:id="@+id/editTextpassword1"
+                    android:id="@+id/editTextpassword"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="3dp"
 
-                    android:layout_marginTop="3dp"
+                    android:layout_marginTop="5dp"
                     android:ems="10"
                     android:hint="*******"
                     android:inputType="textPassword"
@@ -141,24 +144,35 @@
             </LinearLayout>
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="200dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/button_backgroun">
+<!--        <LinearLayout-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:background="@drawable/button_backgroun">-->
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="LOGIN"
-                android:textColor="@color/white"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-        </LinearLayout>
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:gravity="center"-->
+<!--                android:text="LOGIN"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textStyle="bold" />-->
+<!--        </LinearLayout>-->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_Login"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_backgroun"
+            android:text="Login"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            app:backgroundTint="#ed530c" />
 
         <TextView
+            android:id="@+id/forgotPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -186,6 +200,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/go_to_signUP"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
