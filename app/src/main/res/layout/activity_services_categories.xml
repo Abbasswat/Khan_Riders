@@ -7,6 +7,15 @@
     android:orientation="vertical"
     android:background="@color/black"
     tools:context=".Services_Categories">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
 
 <LinearLayout
@@ -143,7 +152,143 @@
 
             </LinearLayout>
         </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:layout_marginRight="2dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView88"
+                android:layout_width="200dp"
+                android:padding="10dp"
+                android:layout_height="175dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/landcrousier" />
+
+            <TextView
+                android:id="@+id/btn_touristBooking8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/backgroundedittext"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="Tourist"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:layout_marginLeft="2dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView99"
+                android:layout_width="200dp"
+                android:layout_height="175dp"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/landcrousier" />
+            <TextView
+                android:id="@+id/btnSchoolBus_booking9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/backgroundedittext"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text=" School Bus"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold|italic" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:layout_marginRight="2dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView888"
+            android:layout_width="200dp"
+            android:padding="10dp"
+            android:layout_height="175dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/landcrousier" />
+
+        <TextView
+            android:id="@+id/btn_touristBooking888"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/backgroundedittext"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:text="Tourist"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:layout_marginLeft="2dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView999"
+            android:layout_width="200dp"
+            android:layout_height="175dp"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/landcrousier" />
+        <TextView
+            android:id="@+id/btnSchoolBus_booking00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/backgroundedittext"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:text=" School Bus"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+</LinearLayout>
+
+
+    <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -164,7 +309,7 @@
         </LinearLayout>
 
 
-
-
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

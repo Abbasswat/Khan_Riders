@@ -7,4 +7,15 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+    <color name="home">#1194aa</color>
+    <color name="like">#c93790</color>
+    <color name="notification">#AE7E0f</color>
+    <color name="profile">#583787</color>
+
+    <color name="home_20">#331194AA</color>
+    <color name="like_20">#33C93790</color>
+    <color name="notification_20">#33AE7E0F</color>
+    <color name="profile_20">#33583787</color>
 </resources>
