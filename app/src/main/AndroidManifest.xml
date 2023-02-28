@@ -25,12 +25,14 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="YOUR_API_KEY" />
+            android:value="AIzaSyCjxofP3v9grek1qFqDPObDeYXY-bFRPzE" />
 
         <activity
             android:name=".SwatMap"
-            android:exported="false"
-            android:label="@string/title_activity_swat_map" />
+            android:exported="true"
+            android:label="@string/title_activity_swat_map" >
+
+        </activity>
         <activity
             android:name=".Services_Categories"
             android:exported="true"></activity>
@@ -40,18 +42,20 @@
         <activity
             android:name=".Welcome_Activity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".Sign_In_Activity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

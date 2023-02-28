@@ -44,8 +44,8 @@ public class SwatMap extends FragmentActivity implements OnMapReadyCallback {
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        LatLng swat = new LatLng(-35.252617185659574, 72.45388798755965);
+        mMap.addMarker(new MarkerOptions().position(swat).title("Marker in Swat"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(swat));
     }
 }
