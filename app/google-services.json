@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "671670866536",
+    "firebase_url": "https://swat-riders-default-rtdb.firebaseio.com",
+    "project_id": "swat-riders",
+    "storage_bucket": "swat-riders.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:671670866536:android:a7a32cc0229767058321dd",
+        "android_client_info": {
+          "package_name": "com.example.swat_riders"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "671670866536-jkbj94unkgj2jh5phf2n8jl14nlj83un.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVxhS_D7qyeqYHWlPHw2-i2FH9YF0coTI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "671670866536-jkbj94unkgj2jh5phf2n8jl14nlj83un.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

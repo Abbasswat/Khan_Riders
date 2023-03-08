@@ -101,7 +101,7 @@
 
                     android:ems="10"
                     android:hint="+923451111111"
-                    android:inputType="phone"
+                    android:inputType="textEmailAddress"
                     android:paddingLeft="3dp"
                     android:textColor="#F8FFFFFF"
                     android:textColorHint="#A3FFFFFF" />

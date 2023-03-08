@@ -38,10 +38,13 @@
             android:exported="true"></activity>
         <activity
             android:name=".Sign_up_activity"
-            android:exported="false" />
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".Welcome_Activity"
             android:exported="true">
+
 
         </activity>
         <activity
