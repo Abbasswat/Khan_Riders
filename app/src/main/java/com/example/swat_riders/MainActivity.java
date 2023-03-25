@@ -1,11 +1,26 @@
 package com.example.swat_riders;
 
+import static android.content.ContentValues.TAG;
+
+
+
 import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.Manifest;
+import android.app.Dialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.pm.PackageManager;
+import android.location.LocationManager;
+import android.media.audiofx.Virtualizer;
+import android.net.Uri;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
@@ -15,6 +30,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.provider.ContactsContract;
+import android.provider.Settings;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -26,9 +43,18 @@ import com.example.swat_riders.Fragments.payment_info;
 import com.example.swat_riders.Fragments.setting_frag;
 import com.example.swat_riders.Model.ModelClass;
 import com.example.swat_riders.databinding.ActivityMainBinding;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GoogleApiAvailability;
+import com.google.android.gms.common.api.GoogleApi;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
+import com.karumi.dexter.Dexter;
+import com.karumi.dexter.PermissionToken;
+import com.karumi.dexter.listener.PermissionDeniedResponse;
+import com.karumi.dexter.listener.PermissionGrantedResponse;
+import com.karumi.dexter.listener.PermissionRequest;
+import com.karumi.dexter.listener.single.PermissionListener;
 import com.sagarkoli.chetanbottomnavigation.chetanBottomNavigation;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -54,11 +80,15 @@ import com.google.firebase.database.ValueEventListener;
 
 import org.w3c.dom.Text;
 
+import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
 
 
 public class MainActivity extends AppCompatActivity {
+
+//    boolean isPermissionGranted;
+
 
     LinearLayoutManager linearLayoutManager;
     ActivityMainBinding binding;
@@ -79,11 +109,21 @@ ViewPager2 viewPager;
     private String[] titles= new String[]{"Pay","Book_ride","Map","localcalls","Profile"};
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        // map permission
+//        checkPermission();
+//        if (isPermissionGranted){
+//            if (checkGooglePlaySercices()){
+//                Toast.makeText(this, "Google play services is available", Toast.LENGTH_SHORT).show();
+//            }else {
+//                Toast.makeText(this, "Google play services is not available", Toast.LENGTH_SHORT).show();
+//            }
+//        }
 
         tabLayout = findViewById(R.id.Tab);
         viewPager = findViewById(R.id.View_Pager);
@@ -190,4 +230,48 @@ ViewPager2 viewPager;
 //        adapter.notifyDataSetChanged();
 //    }
     }
+//
+//    private boolean checkGooglePlaySercices() {
+//        GoogleApiAvailability googleApiAvailability= GoogleApiAvailability.getInstance();
+//        int result = googleApiAvailability.isGooglePlayServicesAvailable(this);
+//        if (result==ConnectionResult.SUCCESS){
+//            return true;
+//        } else if (googleApiAvailability.isUserResolvableError(result)) {
+//            Dialog dialog =googleApiAvailability.getErrorDialog(this,result,201, new DialogInterface.OnCancelListener() {
+//                @Override
+//                public void onCancel(DialogInterface dialogInterface) {
+//                    Toast.makeText(MainActivity.this, "User Cancelled dialog", Toast.LENGTH_SHORT).show();
+//                }
+//            });
+//            dialog.show();
+//        }
+//
+//        return false;
+//    }
+//
+//    private void checkPermission() {
+//        Dexter.withContext(this).withPermission(Manifest.permission.ACCESS_FINE_LOCATION).withListener(new PermissionListener() {
+//            @Override
+//            public void onPermissionGranted(PermissionGrantedResponse permissionGrantedResponse) {
+//            isPermissionGranted =true;
+//                Toast.makeText(MainActivity.this, "Permission is Granted", Toast.LENGTH_SHORT).show();
+//            }
+//
+//            @Override
+//            public void onPermissionDenied(PermissionDeniedResponse permissionDeniedResponse) {
+//                Intent intent = new Intent();
+//                intent.setAction(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+//                Uri uri = Uri.fromParts("package",getPackageName(),"");
+//                intent.setData(uri);
+//                startActivity(intent);
+//            }
+//
+//            @Override
+//            public void onPermissionRationaleShouldBeShown(PermissionRequest permissionRequest, PermissionToken permissionToken) {
+//        permissionToken.continuePermissionRequest();
+//            }
+//        }).check();
+//    }
+
+
 }

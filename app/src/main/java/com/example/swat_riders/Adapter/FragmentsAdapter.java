@@ -10,9 +10,10 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import com.example.swat_riders.Fragments.Book_ride;
 import com.example.swat_riders.Fragments.Local_calls;
-import com.example.swat_riders.Fragments.Map;
 import com.example.swat_riders.Fragments.Payment_methods;
 import com.example.swat_riders.Fragments.payment_info;
+import com.example.swat_riders.Map;
+import com.example.swat_riders.SwatMap;
 
 public class FragmentsAdapter extends FragmentStateAdapter {
 

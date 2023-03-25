@@ -39,8 +39,11 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    // google play services
     implementation 'com.google.android.gms:play-services-maps:18.0.2'
-    implementation platform('com.google.firebase:firebase-bom:31.2.2')
+
+    implementation platform('com.google.firebase:firebase-bom:' +
+            '31.2.2')
     implementation 'com.google.firebase:firebase-database'
     implementation 'com.google.firebase:firebase-auth:21.1.0'
     testImplementation 'junit:junit:4.13.2'
@@ -51,5 +54,9 @@ dependencies {
     implementation 'com.github.chetankoli1.BottomNavigation:chetanbottomnavigation:0.0.3'
     //cicular image
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //google location
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    // dexter dependency
+    implementation 'com.karumi:dexter:6.2.2'
 
 }

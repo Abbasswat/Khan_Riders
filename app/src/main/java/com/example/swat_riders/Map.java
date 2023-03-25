@@ -1,4 +1,4 @@
-package com.example.swat_riders.Fragments;
+package com.example.swat_riders;
 
 import android.os.Bundle;
 
@@ -8,7 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.swat_riders.R;
 
 public class Map extends Fragment {
 
@@ -16,9 +15,6 @@ public class Map extends Fragment {
     public Map() {
         // Required empty public constructor
     }
-
-
-
 
 
     @Override
